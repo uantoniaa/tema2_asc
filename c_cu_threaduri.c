@@ -45,7 +45,7 @@ void *functie2(void *vargp) {
 }
 
 int main(){
-    printf("Introduce n de la tastatura:\n");
+    printf("Introdu n: \n");
     scanf("%lf",&n);
     pthread_t id1,id2;
     pthread_create(&id1, NULL, functie1, NULL);
