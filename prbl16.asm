@@ -11,7 +11,7 @@ section .data
 	
 section .bss
 	res:	resq 1
-	x:		resq 1
+	x:      resq 1
 
 section .text
     global main
@@ -19,8 +19,8 @@ main:
     sub    rsp, 8
 	
 	lea 	rsi, [x]
-    lea 	rdi, [format_input]
-    mov 	rax, 1
+        lea 	rdi, [format_input]
+        mov 	rax, 1
 	call scanf	wrt ..plt
 	
 	fld qword [x]  
