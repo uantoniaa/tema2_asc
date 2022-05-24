@@ -18,8 +18,8 @@ section .text
 main:
     sub    rsp, 8
 	
-	lea 	rsi, [x]
-        lea 	rdi, [format_input]
+	mov 	rsi, x
+        mov 	rdi, format_input
         mov 	rax, 1
 	call scanf	wrt ..plt
 	
